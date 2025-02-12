@@ -12,7 +12,7 @@
             <div class="nav-left">
                 <img src="burger_bar.svg" alt="" class="bar" id="bar">
             </div>
-            <div class="nav-right" class="logo">
+            <div class="nav-right">
                 <a href="https://github.com/ElFakhri/" class="nav-link">
                     <img src="github-mark.svg" alt="">
                     <p>github.com/ElFakhri</p>
@@ -21,19 +21,26 @@
         </div>
     </nav>
     <div class="document-container">
-        <div class="sidebar" id="sidebar">aa</div>
+        <div class="sidebar" id="sidebar">
+            <div class="section-links">
+                <a href="#about" class="section-link">About</a>
+                <a href="#hobbies" class="section-link">Hobbies</a>
+                <a href="#projects" class="section-link">Projects</a>
+                <a href="#education" class="section-link">Education</a>
+                <a href="#contact" class="section-link">Contact</a>
+            </div>
+        </div>
         <div class="container shrink" id="container">
-            <section class="section" id="sectionMain">
+            <section class="section" id="about">
                 <h2>Hello, my name is Muhammad Izzuddin El-Fakhri,</h2>
                 <p>
                     I am from Surabaya, Indonesia.
-                    I have a strong passion for programming specifically web development. blablablbalblblablaba
+                    I have a strong passion for programming specifically in web development. I have always loved programming
+                    ever since i was a little kid, I was introduced to scratch and created some games but then i learned
+                    Python and also web development and it has been my passion ever since.
                 </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum delectus esse vel saepe optio tenetur iusto error assumenda
-                    nostrum vitae dicta, voluptates omnis ullam architecto distinctio sit similique perferendis, temporibus totam mollitia debitis
-                    recusandae ut dolorum? Hic quam, in quae explicabo obcaecati cupiditate enim incidunt nulla eaque ratione voluptas cumque.</p>
             </section>
-            <section class="section" id="sectionHobby">
+            <section class="section" id="hobbies">
                 <h2>My Hobbies</h2>
                 <p>As i said before, my main passion is in programming, however i am also a history entusiast, it's really interesting
                     to learn about the past and it gives us a sense of identity and also teaches us about the rest of the world. One of my
@@ -43,7 +50,7 @@
                     or twice a day to improve on my self-defense skill and to keep myself healthy.
                 </p>
             </section>
-            <section class="section" id="sectionProject">
+            <section class="section" id="projects">
                 <h2>My Projects</h2>
                 <p>I have done a lot of projects in my 2 years of programming, it ranges from CLI programs to Web Applications,
                     here is a list of a few projects i have created.
@@ -89,7 +96,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="section" id="sectionEducation">
+            <section class="section" id="education">
                 <h2>Education</h2>
                 <ul class="education-list">
                     <li class="education-list__item">
@@ -112,8 +119,25 @@
                     </li>
                 </ul>
             </section>
-            <section class="section" id="sectionContact">
+            <section class="section" id="contact">
                 <h2>Contacts</h2>
+                <form class="contact-form">
+                    <div class="form-top">
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
             </section>
         </div>
     </div>
